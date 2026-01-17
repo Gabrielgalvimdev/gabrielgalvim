@@ -37,12 +37,9 @@ export async function submitContactForm(prevState: FormState, formData: FormData
     };
   }
   
-  // Here you would normally send an email. For this simulation, we'll just log it.
-  console.log('Form data submitted:', validatedFields.data);
+  // Aqui normalmente você enviaria um e-mail. Para esta simulação, apenas registramos os dados.  console.log('Form data submitted:', validatedFields.data);
 
-  // In a real application, you would integrate with an email service like Resend, SendGrid, or Nodemailer.
-  // const { name, email, subject, message } = validatedFields.data;
-  // await sendEmail({ to: 'almeida99122@gmail.com', from: 'portfolio@yourdomain.com', subject, text: message, reply_to: email });
+  // Em uma aplicação real, você integraria com um serviço de e-mail como Resend, SendGrid ou Nodemailer.  // const { name, email, subject, message } = validatedFields.data;
 
   return {
     message: 'Obrigado pelo seu contato! Responderei em breve.',
